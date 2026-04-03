@@ -40,40 +40,78 @@
       <a href="#">이달의 혜택</a>
     </div>
 
-    <nav class="quick-links" aria-label="페이지 바로가기">
-      <a class="quick-card" href="#section-overview">
-        <img
-          class="quick-card-image"
-          src="https://www.kh.or.kr/visit/resource/www/img/course_introduction_info_img1.png"
-          alt="개요 바로가기 이미지"
-        >
-        <span class="quick-card-label">개요</span>
-      </a>
-      <a class="quick-card" href="#section-monthly">
-        <img
-          class="quick-card-image"
-          src="https://www.kh.or.kr/visit/resource/www/img/course_introduction_map_img1.png"
-          alt="이달의 방문코스 바로가기 이미지"
-        >
-        <span class="quick-card-label">이달의 방문코스</span>
-      </a>
-      <a class="quick-card" href="#section-benefits">
-        <img
-          class="quick-card-image"
-          src="https://www.kh.or.kr/visit/resource/www/img/course_introduction_coupon_img1.png"
-          alt="혜택 모아보기 바로가기 이미지"
-        >
-        <span class="quick-card-label">혜택 모아보기</span>
-      </a>
-      <a class="quick-card" href="#section-qr">
-        <img
-          class="quick-card-image"
-          src="https://www.kh.or.kr/visit/resource/www/img/course_introduction_qr_img1.png"
-          alt="QR코드 바로가기 이미지"
-        >
-        <span class="quick-card-label">QR코드</span>
-      </a>
-    </nav>
+    <section class="showcase-panel" aria-labelledby="showcase-title">
+      <div class="showcase-heading">
+        <p class="showcase-kicker">SHOWCASE</p>
+        <h2 id="showcase-title">이달의 방문코스를 한눈에 보는 4개의 배너</h2>
+      </div>
+      <nav class="quick-links" aria-label="페이지 바로가기">
+        <a class="quick-card quick-card-overview" href="#section-overview">
+          <span class="quick-card-step">01</span>
+          <strong class="quick-card-title">캠페인 개요</strong>
+          <p class="quick-card-copy">한국의 국가유산을 더 쉽게 이해하는 입문 섹션</p>
+          <div class="quick-card-graphic" aria-hidden="true">
+            <span class="metric-pill">HERITAGE</span>
+            <div class="bar-chart">
+              <span style="height: 44%"></span>
+              <span style="height: 66%"></span>
+              <span style="height: 82%"></span>
+            </div>
+            <div class="stat-row">
+              <b>월간 코스</b>
+              <strong>12+</strong>
+            </div>
+          </div>
+        </a>
+        <a class="quick-card quick-card-monthly" href="#section-monthly">
+          <span class="quick-card-step">02</span>
+          <strong class="quick-card-title">방문코스 지도</strong>
+          <p class="quick-card-copy">지역별 동선을 비교하는 코스 인포맵</p>
+          <div class="quick-card-graphic" aria-hidden="true">
+            <div class="route-map">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="stat-row">
+              <b>추천 권역</b>
+              <strong>4개</strong>
+            </div>
+          </div>
+        </a>
+        <a class="quick-card quick-card-benefits" href="#section-benefits">
+          <span class="quick-card-step">03</span>
+          <strong class="quick-card-title">혜택 모아보기</strong>
+          <p class="quick-card-copy">숙박, 이동, 참여 혜택을 한 번에 확인</p>
+          <div class="quick-card-graphic" aria-hidden="true">
+            <div class="donut-chart">
+              <span>3</span>
+            </div>
+            <div class="legend-row">
+              <i></i><b>숙박</b>
+              <i></i><b>이동</b>
+              <i></i><b>투어</b>
+            </div>
+          </div>
+        </a>
+        <a class="quick-card quick-card-qr" href="#section-qr">
+          <span class="quick-card-step">04</span>
+          <strong class="quick-card-title">참여 QR</strong>
+          <p class="quick-card-copy">여권 신청과 채널 추가를 바로 연결하는 안내판</p>
+          <div class="quick-card-graphic" aria-hidden="true">
+            <div class="qr-grid">
+              <span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <div class="stat-row">
+              <b>참여 동선</b>
+              <strong>2 STEP</strong>
+            </div>
+          </div>
+        </a>
+      </nav>
+    </section>
 
     <section id="section-overview" class="poster-block">
       <img
