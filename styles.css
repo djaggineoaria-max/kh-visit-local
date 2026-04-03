@@ -140,45 +140,25 @@ a {
   border-bottom: 2px solid var(--text);
 }
 
-.showcase-panel {
-  margin-top: 26px;
-  padding: 24px;
-  border: 1px solid #d7ddd9;
-  border-radius: 28px;
-  background:
-    radial-gradient(circle at top left, rgba(15, 118, 110, 0.08), transparent 34%),
-    linear-gradient(180deg, #f9fcfb, #f4f6f3);
-}
-
-.showcase-heading {
-  margin-bottom: 18px;
-}
-
-.showcase-kicker {
-  margin: 0 0 8px;
-  color: var(--accent);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.16em;
-}
-
-.showcase-heading h2 {
-  margin: 0;
-  font-size: clamp(1.3rem, 2.4vw, 1.8rem);
-  letter-spacing: -0.03em;
-}
-
 .quick-links {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
 }
 
+.hero-quick-links {
+  position: relative;
+  z-index: 1;
+  width: min(980px, 100%);
+  margin-top: 128px;
+}
+
 .quick-card {
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 236px;
+  aspect-ratio: 1 / 1;
+  min-height: 0;
   padding: 18px;
   overflow: hidden;
   border: 1px solid rgba(17, 24, 39, 0.08);
@@ -606,12 +586,11 @@ a {
     padding: 28px 18px 36px;
   }
 
-  .showcase-panel {
-    padding: 20px;
-    border-radius: 22px;
+  .hero-quick-links {
+    margin-top: 120px;
   }
 
   .quick-card {
-    min-height: 210px;
+    min-height: 0;
   }
 }
