@@ -56,6 +56,36 @@ a {
   padding: 0 0 80px;
 }
 
+.page-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin: 18px 0 10px;
+}
+
+.page-switcher-label {
+  color: #475467;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.page-switcher a {
+  padding: 9px 14px;
+  border: 1px solid #d0d5dd;
+  border-radius: 999px;
+  background: #fff;
+  color: #475467;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.page-switcher a.is-current {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #fff;
+}
+
 .hero-banner {
   position: relative;
   overflow: hidden;
@@ -84,6 +114,18 @@ a {
 
 .hero-banner-overlay {
   background: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.24));
+}
+
+body.variant-02 .hero-banner-overlay {
+  background: linear-gradient(rgba(7, 59, 76, 0.62), rgba(7, 59, 76, 0.24));
+}
+
+body.variant-03 .hero-banner-overlay {
+  background: linear-gradient(rgba(58, 28, 113, 0.5), rgba(20, 24, 82, 0.2));
+}
+
+body.variant-04 .hero-banner-overlay {
+  background: linear-gradient(rgba(120, 53, 15, 0.42), rgba(20, 83, 45, 0.22));
 }
 
 .breadcrumb {
@@ -187,6 +229,54 @@ a {
 
 .quick-card-qr {
   background: linear-gradient(180deg, #f3f8ff, #fff);
+}
+
+body.variant-02 .quick-card-overview {
+  background: linear-gradient(180deg, #ecfeff, #fff);
+}
+
+body.variant-02 .quick-card-monthly {
+  background: linear-gradient(180deg, #eff6ff, #fff);
+}
+
+body.variant-02 .quick-card-benefits {
+  background: linear-gradient(180deg, #f0fdf4, #fff);
+}
+
+body.variant-02 .quick-card-qr {
+  background: linear-gradient(180deg, #f8fafc, #fff);
+}
+
+body.variant-03 .quick-card-overview {
+  background: linear-gradient(180deg, #fff1f2, #fff);
+}
+
+body.variant-03 .quick-card-monthly {
+  background: linear-gradient(180deg, #faf5ff, #fff);
+}
+
+body.variant-03 .quick-card-benefits {
+  background: linear-gradient(180deg, #fef3c7, #fff);
+}
+
+body.variant-03 .quick-card-qr {
+  background: linear-gradient(180deg, #eef2ff, #fff);
+}
+
+body.variant-04 .quick-card-overview {
+  background: linear-gradient(180deg, #fffbeb, #fff);
+}
+
+body.variant-04 .quick-card-monthly {
+  background: linear-gradient(180deg, #ecfccb, #fff);
+}
+
+body.variant-04 .quick-card-benefits {
+  background: linear-gradient(180deg, #ede9fe, #fff);
+}
+
+body.variant-04 .quick-card-qr {
+  background: linear-gradient(180deg, #f0f9ff, #fff);
 }
 
 .quick-card-step {
@@ -579,6 +669,10 @@ a {
   .site-header .inner {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .page-switcher {
+    gap: 8px;
   }
 
   .hero-banner {
